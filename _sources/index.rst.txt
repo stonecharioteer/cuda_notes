@@ -28,6 +28,8 @@ CUDA is NVIDIA's C/C++ library to compile code that utilizes their GPUs.
    :caption: Contents:
 
     My Cards <hardware/index.rst>
+    Setup <setup/index.rst>
+    Lessons <chapters/index.rst>
 
 
 ###################

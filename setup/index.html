@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Current Graphics Cards &mdash; Vinay&#39;s Notes on CUDA 0.1a documentation</title>
+  <title>Setting Up the NVIDIA Drivers and CUDA Libraries &mdash; Vinay&#39;s Notes on CUDA 0.1a documentation</title>
   
 
   
@@ -36,8 +36,8 @@
               href="../genindex.html"/>
         <link rel="search" title="Search" href="../search.html"/>
     <link rel="top" title="Vinay&#39;s Notes on CUDA 0.1a documentation" href="../index.html"/>
-        <link rel="next" title="NVIDIA GEForce GTX 1060 3GB Model" href="gtx_1060.html"/>
-        <link rel="prev" title="Welcome to Vinay’s Notes on CUDA!" href="../index.html"/> 
+        <link rel="next" title="Lessons on CUDA" href="../chapters/index.html"/>
+        <link rel="prev" title="NVIDIA GEForce GTX 1060 3GB Model" href="../hardware/gtx_1060.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -92,10 +92,9 @@
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#"> My Cards</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="gtx_1060.html">NVIDIA GEForce GTX 1060 3 GB</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/index.html"> My Cards</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"> Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/index.html"> Lessons</a></li>
 </ul>
 
             
@@ -140,13 +139,13 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-      <li>Current Graphics Cards</li>
+      <li>Setting Up the NVIDIA Drivers and CUDA Libraries</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/hardware/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/setup/index.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -159,18 +158,23 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="current-graphics-cards">
-<h1>Current Graphics Cards<a class="headerlink" href="#current-graphics-cards" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">Cards</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="gtx_1060.html">NVIDIA GEForce GTX 1060 3 GB</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="gtx_1060.html#specifications">Specifications</a></li>
-<li class="toctree-l2"><a class="reference internal" href="gtx_1060.html#output-of-devicequery">Output of deviceQuery</a></li>
-</ul>
-</li>
-</ul>
+  <div class="section" id="setting-up-the-nvidia-drivers-and-cuda-libraries">
+<h1>Setting Up the NVIDIA Drivers and CUDA Libraries<a class="headerlink" href="#setting-up-the-nvidia-drivers-and-cuda-libraries" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">As a Linux user, I am going to focus on the installation and
+setup process for a Linux Mint based computer. I prefer Mint because
+of its out-of-the-box driver support.</p>
 </div>
+<p>Linux Mint makes it easy to set things up.</p>
+<p>To begin:</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">nvidia</span><span class="o">-</span><span class="mi">384</span> <span class="n">nvidia</span><span class="o">-</span><span class="n">cuda</span><span class="o">-</span><span class="n">toolkit</span>
+</pre></div>
+</div>
+<p>And voila! We’re done.</p>
+<p>Pick an editor of your choice, I use Vim, and you’re done.</p>
+<p>Make sure that the drivers are the latest, I installed nvidia-384 as of this
+entry (check the git logs for the date), and I find that stuff works out of the box.</p>
 </div>
 
 
@@ -183,10 +187,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="gtx_1060.html" class="btn btn-neutral float-right" title="NVIDIA GEForce GTX 1060 3GB Model" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../chapters/index.html" class="btn btn-neutral float-right" title="Lessons on CUDA" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../index.html" class="btn btn-neutral" title="Welcome to Vinay’s Notes on CUDA!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../hardware/gtx_1060.html" class="btn btn-neutral" title="NVIDIA GEForce GTX 1060 3GB Model" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

@@ -1,6 +1,5 @@
 
 
-
 <!DOCTYPE html>
 <!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
@@ -9,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Index &mdash; Vinay&#39;s Notes on CUDA 0.1a documentation</title>
+  <title>Lessons on CUDA &mdash; Vinay&#39;s Notes on CUDA 0.1a documentation</title>
   
 
   
@@ -27,19 +26,20 @@
 
   
   
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   
 
   
 
   
         <link rel="index" title="Index"
-              href="#"/>
-        <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="Vinay&#39;s Notes on CUDA 0.1a documentation" href="index.html"/> 
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Vinay&#39;s Notes on CUDA 0.1a documentation" href="../index.html"/>
+        <link rel="prev" title="Setting Up the NVIDIA Drivers and CUDA Libraries" href="../setup/index.html"/> 
 
   
-  <script src="_static/js/modernizr.min.js"></script>
+  <script src="../_static/js/modernizr.min.js"></script>
 
 </head>
 
@@ -55,7 +55,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home"> Vinay's Notes on CUDA
+            <a href="../index.html" class="icon icon-home"> Vinay's Notes on CUDA
           
 
           
@@ -72,7 +72,7 @@
 
           
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
@@ -90,8 +90,10 @@
             
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="hardware/index.html"> My Cards</a></li>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../hardware/index.html"> My Cards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../setup/index.html"> Setup</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"> Lessons</a></li>
 </ul>
 
             
@@ -106,7 +108,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">Vinay's Notes on CUDA</a>
+          <a href="../index.html">Vinay's Notes on CUDA</a>
         
       </nav>
 
@@ -134,14 +136,16 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="index.html">Docs</a> &raquo;</li>
+      <li><a href="../index.html">Docs</a> &raquo;</li>
         
-      <li>Index</li>
+      <li>Lessons on CUDA</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
+            <a href="../_sources/chapters/index.rst.txt" rel="nofollow"> View page source</a>
+          
         
       </li>
     
@@ -153,11 +157,17 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
+  <div class="section" id="lessons-on-cuda">
+<h1>Lessons on CUDA<a class="headerlink" href="#lessons-on-cuda" title="Permalink to this headline">¶</a></h1>
+<p>CUDA is NVIDIA’s parallel computing platform and programming model, meant for
+general purpose computing on GPUs. CUDA is primarily a C/C++ library, meant to be
+used in a way that utilizes the processing capabilities of an NVIDIA GPU.</p>
+<p>In a CUDA program, the seqential part of the workload runs on the CPU, which is optimized for
+single threaded performance. The compute-intensive portion of the application runs on the thousands
+of cores of the GPU in parallel.</p>
+<p>NVIDIA’s CUDA libraries are available for C, C++, FORTRAN and Python.</p>
+<p>Before proceeding, make sure to go through the Setup portion of these notes
+so that you have the runtime libraries properly configured.</p>
 </div>
 
 
@@ -167,6 +177,13 @@
            </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../setup/index.html" class="btn btn-neutral" title="Setting Up the NVIDIA Drivers and CUDA Libraries" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
@@ -194,7 +211,7 @@
 
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
+            URL_ROOT:'../',
             VERSION:'0.1a',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
@@ -202,16 +219,16 @@
             SOURCELINK_SUFFIX: '.txt'
         };
     </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 
   
   
-    <script type="text/javascript" src="_static/js/theme.js"></script>
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
   
 
   
